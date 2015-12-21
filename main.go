@@ -21,7 +21,7 @@ package main
 import (
     "github.com/astaxie/beego"
     "fmt"
-	"github.com/ttch/watchServer/spider/models"
+	"github.com/ttch/watchser/models"
 	"encoding/json"
 )
 
