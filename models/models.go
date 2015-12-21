@@ -29,10 +29,7 @@ func Listener() map[string][]string {
 }
 
 func RunCommand(command []string) (string, error) {
-	fmt.Println("---------")
-	fmt.Println(command)
 	cmd := exec.Command(command[0], command[1:]...)
-	fmt.Println(cmd)
 	message, err := cmd.Output()
 	if err != nil {
 		beego.Error(err)
